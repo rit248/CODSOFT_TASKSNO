@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+  CODSOFT · WEB DEVELOPMENT · LEVEL 2 · TASK 1 — JOB BOARD
+  --------------------------------------------------------
+  Single-file app: HTML + CSS + vanilla JavaScript, localStorage as the data layer.
+  Every storage call sits inside the Api module, so each function can be replaced
+  by a fetch() to an Express + MongoDB backend without touching the views.
+
+  Covers the brief:
+    Home page · Job listings · Job detail · Employer dashboard · Candidate dashboard
+    Application form with resume upload · Search · Notifications · Auth · Responsive
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hirepool — job board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/task5_job_board.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo" onclick="UI.go('home')"><i>H</i> Hirepool</div>
+    <div class="topnav">
+      <button class="btn-quiet" onclick="UI.go('jobs')">Browse jobs</button>
+      <button class="btn-quiet hidden" id="navDash" onclick="UI.dashboard()">Dashboard</button>
+      <button class="btn-quiet bell hidden" id="navBell" onclick="UI.go('inbox')">Inbox<b id="bellCount"></b></button>
+      <span class="who" id="whoami"></span>
+      <button class="btn-quiet hidden" id="logoutBtn" onclick="UI.logout()">Log out</button>
+      <button class="btn hidden" id="loginBtn" onclick="UI.go('auth')">Log in</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="view"></main>
+<footer>Hirepool · CodSoft Web Development internship, Level 2 Task 1</footer>
+
+<script src="js/task5_job_board.js"></script>
+</body>
+</html>

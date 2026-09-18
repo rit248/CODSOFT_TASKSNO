@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+  CODSOFT · WEB DEVELOPMENT · LEVEL 1 · TASK 3 — CALCULATOR
+  ---------------------------------------------------------
+  HTML + CSS Grid + vanilla JavaScript.
+  Features: + - x ÷, percent, sign flip, backspace, clear, decimal,
+  chained operations, a running tape of past results, full keyboard support,
+  and guarded division by zero.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculator — CodSoft Level 1 Task 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/task3_calculator.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="title">
+    <h1>Calculator</h1>
+    <p>CodSoft Web Development · Level 1 Task 3</p>
+  </div>
+
+  <div class="layout">
+    <!-- ===== CALCULATOR ===== -->
+    <div class="calc">
+      <div class="screen" id="screen">
+        <div class="memo" id="memo">&nbsp;</div>
+        <div class="out" id="out" aria-live="polite" aria-atomic="true" role="status">0</div>
+      </div>
+
+      <div class="pad">
+        <button class="fn" data-action="clear">AC</button>
+        <button class="fn" data-action="sign">+/−</button>
+        <button class="fn" data-action="percent">%</button>
+        <button class="op" data-op="/">÷</button>
+
+        <button data-num="7">7</button>
+        <button data-num="8">8</button>
+        <button data-num="9">9</button>
+        <button class="op" data-op="*">×</button>
+
+        <button data-num="4">4</button>
+        <button data-num="5">5</button>
+        <button data-num="6">6</button>
+        <button class="op" data-op="-">−</button>
+
+        <button data-num="1">1</button>
+        <button data-num="2">2</button>
+        <button data-num="3">3</button>
+        <button class="op" data-op="+">+</button>
+
+        <button data-num="0">0</button>
+        <button data-action="decimal">.</button>
+        <button class="fn" data-action="back">⌫</button>
+        <button class="equals" data-action="equals">=</button>
+      </div>
+    </div>
+
+    <!-- ===== TAPE ===== -->
+    <div class="tape">
+      <header>
+        <h2>History</h2>
+        <button type="button" id="clearHistory">Clear</button>
+      </header>
+      <p class="empty" id="emptyNote">Answers you calculate will be listed here. Click one to reuse it.</p>
+      <ol id="historyList"></ol>
+    </div>
+  </div>
+
+  <p class="hint">Keyboard works too: digits, <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd>, <kbd>Enter</kbd> to equal, <kbd>Backspace</kbd> to delete, <kbd>Esc</kbd> to clear.</p>
+</div>
+
+<script src="js/task3_calculator.js"></script>
+</body>
+</html>

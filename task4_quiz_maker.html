@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+  CODSOFT · WEB DEVELOPMENT · LEVEL 2 · TASK 2 — ONLINE QUIZ MAKER
+  ----------------------------------------------------------------
+  Single-file app: HTML + CSS + vanilla JavaScript.
+  Data layer is localStorage, wrapped in a small store module so it can be
+  swapped for a Node/Express + MongoDB API without touching the UI code
+  (see the "TODO: replace with fetch()" comments in the store).
+
+  Features
+    · Register / login (accounts kept locally, passwords hashed with a simple digest)
+    · Create a quiz: title, description, any number of questions, 2-4 options each
+    · Browse all published quizzes
+    · Take a quiz one question at a time, with a progress bar
+    · Results screen with score, pass/fail and a per-question review
+    · Attempt history per user
+    · Responsive down to 360px
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quizly — build and take quizzes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/task4_quiz_maker.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo" onclick="App.go('home')"><i>Q</i> Quizly</div>
+    <div class="topnav">
+      <button class="btn-quiet" onclick="App.go('browse')">Browse quizzes</button>
+      <button class="btn-quiet" id="navMine" onclick="App.go('mine')">My activity</button>
+      <button class="btn-ghost" onclick="App.go('create')">Create a quiz</button>
+      <span class="who" id="whoami"></span>
+      <button class="btn-quiet hidden" id="logoutBtn" onclick="App.logout()">Log out</button>
+      <button class="btn hidden" id="loginBtn" onclick="App.go('auth')">Log in</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="view"></main>
+
+<footer>Quizly · CodSoft Web Development internship, Level 2 Task 2</footer>
+
+<script src="js/task4_quiz_maker.js"></script>
+</body>
+</html>

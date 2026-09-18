@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--
+  CODSOFT · WEB DEVELOPMENT · LEVEL 1 · TASK 2 — LANDING PAGE
+  ----------------------------------------------------------
+  Product: "Dabba" — a home-cooked lunch subscription delivered to your desk.
+  Pure HTML + CSS. No frameworks, no JavaScript needed.
+  Sections: nav, hero, trust bar, how it works, menu, pricing, testimonial, sign-up, footer.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dabba — home-cooked lunch, delivered hot by 1 pm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/task2_landing_page.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<div class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top"><i></i>Dabba</a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#menu">This week</a>
+      <a href="#pricing">Pricing</a>
+      <a class="cta" href="#start">Start a plan</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Now delivering across Agra</p>
+      <h1>Lunch that tastes like <em>someone cooked it for you.</em></h1>
+      <p class="sub">Four fresh dishes in a steel tiffin, cooked the same morning by home kitchens near you, at your desk before 1 pm.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#start">Start a plan</a>
+        <a class="btn btn-ghost" href="#menu">See this week's menu</a>
+      </div>
+      <p class="hero-note">Skip any day before 9 pm. Cancel whenever you like.</p>
+    </div>
+    <div>
+      <svg class="tiffin" viewBox="0 0 420 380" role="img" aria-label="Illustration of a three-tier steel tiffin with a warm meal">
+        <ellipse cx="210" cy="348" rx="150" ry="20" fill="#F0E0C6"/>
+        <rect x="118" y="130" width="184" height="62" rx="12" fill="#D7DDE2"/>
+        <rect x="118" y="130" width="184" height="62" rx="12" fill="none" stroke="#A9B4BD" stroke-width="3"/>
+        <rect x="112" y="196" width="196" height="66" rx="12" fill="#E2E7EB"/>
+        <rect x="112" y="196" width="196" height="66" rx="12" fill="none" stroke="#A9B4BD" stroke-width="3"/>
+        <rect x="106" y="266" width="208" height="70" rx="14" fill="#D7DDE2"/>
+        <rect x="106" y="266" width="208" height="70" rx="14" fill="none" stroke="#A9B4BD" stroke-width="3"/>
+        <rect x="150" y="112" width="120" height="22" rx="9" fill="#5E1B2A"/>
+        <path d="M150 118c0-34 30-56 60-56s60 22 60 56" fill="none" stroke="#5E1B2A" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="160" cy="161" r="13" fill="#E8A72C"/>
+        <circle cx="200" cy="161" r="13" fill="#2E5A3E"/>
+        <circle cx="240" cy="161" r="13" fill="#C0492E"/>
+        <rect x="140" y="222" width="140" height="16" rx="8" fill="#E8A72C"/>
+        <rect x="140" y="292" width="140" height="18" rx="9" fill="#F5EBD6"/>
+        <g stroke="#E0C9A6" stroke-width="5" stroke-linecap="round" fill="none" opacity=".85">
+          <path d="M175 88c10-12-8-20 2-34"/>
+          <path d="M210 80c10-12-8-20 2-34"/>
+          <path d="M245 88c10-12-8-20 2-34"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust">
+  <div class="wrap">
+    <div><b>1,240</b> lunches delivered last month</div>
+    <div><b>32</b> home kitchens on the network</div>
+    <div><b>12:40 pm</b> average delivery time</div>
+    <div><b>0</b> single-use plastic</div>
+  </div>
+</div>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section id="how">
+  <div class="wrap">
+    <div class="head">
+      <h2>Three steps, then lunch stops being your problem.</h2>
+      <p>Set it up once on Sunday. The rest of the week runs itself.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div>
+          <h3>Pick your plan</h3>
+          <p>Choose veg or non-veg, how many days a week you eat in, and how spicy you want it. Change any of it later.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>We cook at 10 am</h3>
+          <p>A kitchen near your office starts your tiffin that morning. Nothing is cooked the night before, ever.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>It arrives hot by 1 pm</h3>
+          <p>Delivered in an insulated steel tiffin. Leave it at reception the next morning and we collect it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <h2>What's in the tiffin this week</h2>
+      <p>The menu rotates every week so you are never eating the same thing twice.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="art">
+          <svg viewBox="0 0 320 150" role="img" aria-label="Rajma chawal thali">
+            <rect width="320" height="150" fill="#5E1B2A"/>
+            <circle cx="160" cy="80" r="56" fill="#F6E6D2"/>
+            <path d="M104 80a56 56 0 0 1 112 0z" fill="#E8A72C"/>
+            <circle cx="160" cy="96" r="24" fill="#8D3A20"/>
+            <circle cx="115" cy="104" r="12" fill="#2E5A3E"/>
+            <circle cx="205" cy="104" r="12" fill="#FFF8EC"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Rajma chawal</h3>
+          <p class="day">Monday &amp; Thursday</p>
+          <p>Slow-cooked kidney beans, steamed rice, jeera aloo and a wedge of lemon.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="art">
+          <svg viewBox="0 0 320 150" role="img" aria-label="Paneer and roti thali">
+            <rect width="320" height="150" fill="#2E5A3E"/>
+            <circle cx="160" cy="80" r="56" fill="#F6E6D2"/>
+            <rect x="118" y="46" width="84" height="34" rx="17" fill="#E8C07A"/>
+            <circle cx="140" cy="105" r="16" fill="#C0492E"/>
+            <circle cx="186" cy="105" r="16" fill="#FFF8EC"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Paneer butter masala</h3>
+          <p class="day">Tuesday &amp; Friday</p>
+          <p>Fresh paneer in a tomato gravy, two phulkas, salad and boondi raita.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="art">
+          <svg viewBox="0 0 320 150" role="img" aria-label="Khichdi bowl">
+            <rect width="320" height="150" fill="#8D3A20"/>
+            <circle cx="160" cy="80" r="56" fill="#F6E6D2"/>
+            <circle cx="160" cy="80" r="38" fill="#E8A72C"/>
+            <circle cx="148" cy="70" r="6" fill="#2E5A3E"/>
+            <circle cx="172" cy="88" r="6" fill="#2E5A3E"/>
+            <circle cx="170" cy="66" r="5" fill="#C0492E"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Ghee khichdi</h3>
+          <p class="day">Wednesday</p>
+          <p>Moong dal khichdi with ghee, papad, kadhi and a spoon of aam ka achar.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="head">
+      <h2>Pay for the days you actually eat in.</h2>
+      <p>Every plan includes delivery, the tiffin, and pickup the next morning.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Trial week</h3>
+        <div class="price">₹499</div>
+        <p class="per">5 lunches, one week</p>
+        <ul>
+          <li>Veg menu only</li>
+          <li>Delivery to one address</li>
+          <li>No commitment after the week</li>
+        </ul>
+        <a class="btn btn-ghost" href="#start">Try a week</a>
+      </div>
+      <div class="plan featured">
+        <span class="tag">Most popular</span>
+        <h3>Weekday plan</h3>
+        <div class="price">₹1,799</div>
+        <p class="per">20 lunches a month</p>
+        <ul>
+          <li>Veg or non-veg, switch any day</li>
+          <li>Skip days and roll them over</li>
+          <li>Pick your spice level</li>
+          <li>Priority delivery before 12:45 pm</li>
+        </ul>
+        <a class="btn btn-primary" href="#start">Start this plan</a>
+      </div>
+      <div class="plan">
+        <h3>Office plan</h3>
+        <div class="price">₹1,549</div>
+        <p class="per">per person, 5+ people</p>
+        <ul>
+          <li>One drop for the whole floor</li>
+          <li>Single monthly invoice</li>
+          <li>Menu voted on by your team</li>
+        </ul>
+        <a class="btn btn-ghost" href="#start">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIAL ===== -->
+<section class="quote">
+  <div class="wrap">
+    <div>
+      <blockquote>I stopped ordering from apps in March and I have not missed them once.</blockquote>
+      <p class="who">Ritika Sahni · designer, Sanjay Place</p>
+    </div>
+    <div>
+      <p>Most of our subscribers came over from food delivery apps. The usual reasons: the food arrived cold, the bill kept growing, and by Wednesday nothing looked appetising any more.</p>
+      <p style="margin:0">A Dabba lunch costs about ₹90 a day, arrives at the same time every day, and comes from a kitchen we have actually visited.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SIGN UP ===== -->
+<section class="signup" id="start">
+  <div class="wrap">
+    <div>
+      <h2>Start with one week.</h2>
+      <p>Tell us where you work and what you eat. We will confirm your first delivery by tonight.</p>
+      <p style="margin:0">Questions? Call us on <a href="tel:+919000000000" style="color:#E8A72C">+91 90000 00000</a>.</p>
+    </div>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Ritika Sahni" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@company.com" required>
+      </div>
+      <div>
+        <label for="area">Delivery area</label>
+        <select id="area" name="area">
+          <option>Sanjay Place</option>
+          <option>Civil Lines</option>
+          <option>Tajganj</option>
+          <option>Sikandra</option>
+        </select>
+      </div>
+      <div>
+        <label for="diet">Preference</label>
+        <select id="diet" name="diet">
+          <option>Vegetarian</option>
+          <option>Non-vegetarian</option>
+          <option>Jain</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" type="submit">Start my trial week</button>
+      <p class="fineprint">No card needed today. We collect payment after your first lunch.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top" style="color:#F3DFC9"><i></i>Dabba</a>
+        <p style="margin-top:12px;max-width:34ch">Home-cooked lunch from kitchens in your neighbourhood, delivered in steel, collected the next day.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#menu">This week's menu</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Our kitchens</a></li>
+          <li><a href="#">Cook with us</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="mailto:hello@dabba.example">hello@dabba.example</a></li>
+          <li><a href="tel:+919000000000">+91 90000 00000</a></li>
+          <li><a href="#">Delivery areas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>&copy; 2026 Dabba. A practice project, not a real business.</span>
+      <span>Built for CodSoft Web Development · Level 1 Task 2</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
